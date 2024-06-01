@@ -1,18 +1,19 @@
 :root {
-  --background-color: #121212;
-  --text-color: #e0e0e0;
-  --accent-color: #bb86fc;
-  --header-bg-color: #1f1f1f;
-  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  --background-color: rgba(0, 0, 60, .9);
+  --text-color: rgba(255, 255, 255, .5);
+  --accent-color: rgba(255, 255, 255, 1);
+  /* --header-bg-color: #1f1f1f; */
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto';
+  --list-font: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto';
   --font-size: 16px;
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
+} */
+/* 
 body {
   font-family: var(--font-family);
   font-size: var(--font-size);
@@ -21,33 +22,71 @@ body {
   color: var(--text-color);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+} */
+
+body{
+  background-color: var(--background-color);
 }
 
 .app {
   text-align: left;
   width: 100%;
   max-width: 1200px;
-  padding: 20px;
+  padding: 40px;
 }
 
 header {
   background-color: var(--header-bg-color);
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  /* padding: 20px; */
+  /* border-radius: 8px;
+  margin-bottom: 20px; */
+}
+
+h1, h2, h3{
+  margin: 15px
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+h3{
+  font-size: 1em;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.separator{
+  margin: 100px 0;
+
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 15px;
+}
+
+ul li{
+  margin: 10px 0;
 }
 
 a {
   color: var(--accent-color);
   text-decoration: none;
   transition: color 0.3s;
+  font-family: var(--list-font);
+  font-size: 1.1em
 }
 
 a:hover {
@@ -55,7 +94,7 @@ a:hover {
 }
 
 button {
-  font-family: var(--font-family);
+  font-family: var(--list-font);
   background-color: var(--accent-color);
   color: var(--background-color);
   border: none;
@@ -70,11 +109,11 @@ button:hover {
   background-color: #ff79c6;
 }
 
-main {
+/* main {
   background-color: var(--header-bg-color);
   padding: 20px;
   border-radius: 8px;
-}
+} */
 
 /* #root {
   max-width: 1280px;
