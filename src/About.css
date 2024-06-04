@@ -1,0 +1,123 @@
+:root {
+  --background-color: rgba(0, 0, 60, .9);
+  --text-color: rgba(255, 255, 255, .5);
+  --accent-color: rgba(255, 255, 255, 1);
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto';
+  --list-font: 'Inter', system-ui, -apple-system, 'Segoe UI', 'Roboto';
+  --font-size: 16px;
+}
+
+body{
+  background-color: var(--background-color);
+}
+
+.app {
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+header {
+  background-color: var(--header-bg-color);
+}
+
+h1, h2, h3{
+  margin: 15px
+}
+
+h1 {
+  font-size: 3em;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--accent-color);
+  font-family: var(--font-family);
+}
+
+h3{
+  font-size: 1em;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.separator{
+  margin: 100px 0;
+
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 15px;
+}
+
+ul li{
+  margin: 10px 0;
+}
+
+.horizontial-line{
+  border-top: 2px var(--text-color) solid;
+  width: 100px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-family: var(--list-font);
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+a:hover {
+  transform: scale(1.2);  /* Makes the element 20% larger */
+  color: var(--accent-color);  /* Change the color when hovered */
+    
+}
+
+.help-button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button is above other content */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.help-menu{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none; /* Hidden by default */
+  z-index: 999; /* Ensure the menu is above other content but below the button */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* 
+button {
+  font-family: var(--list-font);
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff79c6;
+} */
+
