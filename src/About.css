@@ -79,7 +79,7 @@ a:hover {
     
 }
 
-.help-button{
+/* .help-button{
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -87,23 +87,23 @@ a:hover {
   background-color: #333;
   color: white;
   cursor: pointer;
-  z-index: 1000; /* Ensure the button is above other content */
-  border-radius: 5px;
+  z-index: 1000; 
+   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+}  */
 
-.help-menu{
+/* .help-menu{
   position: fixed;
   bottom: 70px;
   right: 20px;
   background-color: white;
   border: 1px solid #ccc;
   padding: 10px;
-  display: none; /* Hidden by default */
-  z-index: 999; /* Ensure the menu is above other content but below the button */
+  display: none; Hidden by default
+  z-index: 999; 
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+} 
 /* 
 button {
   font-family: var(--list-font);
