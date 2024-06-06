@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 import About from './About.tsx';
-import Projects from './Projets.tsx';
+import Projects from './Projects.tsx';
 import Experience from './Experience.tsx'
+import Publications from './Publications.tsx'
+import Menu from './Menu.tsx'
 
 
 const App: React.FC = () => {
@@ -11,6 +13,8 @@ const App: React.FC = () => {
       <About></About>
       <Projects></Projects>
       <Experience></Experience>
+      <Publications></Publications>
+      <Menu></Menu>
       <></>
     </div>
    

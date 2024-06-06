@@ -1,11 +1,11 @@
 // src/Projects.tsx
 import React from 'react';
-import './Experience.css';
+import './Publications.css';
 
-const Experience: React.FC = () => {
+const Publications: React.FC = () => {
   return (
-    <div className="experience-section">
-      <h1>EXPERIENCE</h1>
+    <div className="publications-section">
+      <h1>Publications</h1>
       <ul>
         <li>Project 1</li>
         <li>Project 2</li>
@@ -15,4 +15,4 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+export default Publications;

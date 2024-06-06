@@ -1,7 +1,7 @@
-.projects-section{
+.experience-section{
   position: absolute;
   padding: 20px;
-  background-color: #e9e9e9;
-  min-height: 200vh; /* Ensure full viewport height */
-  margin-top: 200vh; /* Position it below the viewport */
+  background-color: black;
+  min-height: 100vh; /* Ensure full viewport height */
+  margin-top: 100vh; /* Position it below the viewport */
 }
