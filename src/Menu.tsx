@@ -6,10 +6,9 @@ const Menu: React.FC = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-        if (isMenuOpen){
-
-
-        }
+        // if (isMenuOpen){
+          
+        // }
         //console.log("Menu state: ", !isMenuOpen);
     };
 
@@ -47,15 +46,16 @@ const Menu: React.FC = () => {
       // </div>
       <div>
           <div className="help-button" onClick={toggleMenu}>Help</div>
-          <div className="help-menu">
+          {isMenuOpen && 
+            (<div className="help-menu">
               <ul>
                   <li><a href="#about">About</a></li>
                   <li><a href="#projects">Projects</a></li>
                   <li><a href="#contact">Contact</a></li>
               </ul>
-          </div>
-          {/* {menuContent} */}
+          </div>)}
       </div>
+
     );
 };
 

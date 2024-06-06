@@ -1,11 +1,19 @@
 import React from 'react';
 import './App.css';
 import About from './About.tsx';
+import Projects from './Projets.tsx';
+import Experience from './Experience.tsx'
 
 
 const App: React.FC = () => {
   return (
-    <About></About>
+    <div>
+      <About></About>
+      <Projects></Projects>
+      <Experience></Experience>
+      <></>
+    </div>
+   
     // <div className="app">
     //   <main>
     //     <h1>Duc La</h1>
