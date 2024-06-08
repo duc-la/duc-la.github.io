@@ -1,7 +1,7 @@
 .experience-section{
-  position: absolute;
+  position: relative;
   padding: 20px;
   background-color: black;
-  min-height: 100vh; /* Ensure full viewport height */
-  margin-top: 100vh; /* Position it below the viewport */
+  min-height: 100vh; 
+  margin-top: 100vh; 
 }
