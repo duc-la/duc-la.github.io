@@ -1,7 +1,0 @@
-.publications-section{
-  position: absolute;
-  padding: 20px;
-  background-color: black;
-  min-height: 300vh; /* Ensure full viewport height */
-  margin-top: 300vh; /* Position it below the viewport */
-}

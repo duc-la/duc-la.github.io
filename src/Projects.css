@@ -1,7 +1,0 @@
-.projects-section{
-  position: absolute;
-  padding: 20px;
-  background-color: black;
-  min-height: 200vh; /* Ensure full viewport height */
-  margin-top: 200vh; /* Position it below the viewport */
-}
