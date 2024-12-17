@@ -106,12 +106,12 @@ html,body{
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
-    background-color: #fff;
+    background-color: #8892b0;
     border: none;
 }
 
 nav.navbar.bootsnav {
-    background-color: #fff;
+    background-color: #8892b0; 
     border-bottom: transparent;
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
 }
@@ -139,7 +139,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     transition: 0.3s linear;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #e6f1ff;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -190,17 +190,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    /* background:url(../images/about/welcome-banner.jpg)no-repeat; */
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:100vh;
 }
 .welcome-hero:before{
     position:absolute;
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background: #0a192f; /*rgba(31,44,108,.65);*/
     width:100%;
     height:100%;
 }
@@ -213,7 +213,18 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     text-transform: uppercase;
     line-height: 1.5;
 }
-.header-text h2 span {color: #d92cf9;}
+
+.header-text h4 {
+  color: #fff;
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.header-text h2 span {font-size: 30px;}
+.header-text h2 span span{color: #64ffda}
+
 .header-text p {
     color: #fff;
     font-size: 20px;
@@ -228,9 +239,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     line-height: 60px;
     border-radius: 3px;
     text-transform: capitalize;
-    color: #fff;
-    background: #b636ff;
-    border:1px solid #b636ff;
+    color: #8892b0;
+    background: #a8ffe3;
+    border:1px solid #a8ffe3;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -238,14 +249,50 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px; /* Adjust to position the arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem; /* Adjust arrow size */
+  color: #a8ffe3; /* Match the light green theme */
+  animation: bounce 2s infinite; /* Adds a subtle bounce effect */
+  
+}
+
+.scroll-down p{
+  font-size: 2rem; 
+}
+
+.scroll-down a {
+  text-decoration: none;
+  color: inherit; /* Inherits color from .scroll-down */
+  font-size: 6rem; 
+}
+
+.scroll-down:hover {
+  color: #64ffda; /* Slightly darker on hover */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+      transform: translate(-50%, 0);
+  }
+  50% {
+      transform: translate(-50%, -10px); /* Moves the arrow up slightly */
+  }
+}
+
 .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
 /*.header-text-area*/
 
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 50px 0 100px;}
-.about-content {padding-top: 100px;}
+.about {padding: 100px 0 0px;}
+.about-content {padding-top: 0px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
     font-size:18px;
@@ -256,8 +303,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-about-txt p {
     font-size: 16px;
     color: #999fb3;
-    padding: 35px 0 43px;
-    border-bottom: 1px solid #999fb3;
+    padding: 10px 0 0px;
 }
 .single-about-add-info {
     margin: 35px 0;
@@ -330,7 +376,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 .education {
     background:  #f9fbfd;
-    padding-top:  50px;
+    padding-top:  100px;
 }
 .education-horizontal-timeline {
     padding: 80px 0;
@@ -372,7 +418,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .skills {
     
 }
-.skill-content{padding: 50px 0 80px;}
+.skill-content{padding: 100px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
     font-size: 24px;
@@ -439,7 +485,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         7. Experience
 -------------------------------------*/
 .experience {
-    padding: 50px 0 100px;
+    padding: 100px 0 100px;
     border-top: 1px solid #e5ebf2;
 }
 .experience-content {padding-top: 100px;}
@@ -520,7 +566,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         8. Profiles
 --------------------------------------*/
 .profiles {
-    padding:  50px 0 100px;
+    padding:  100px 0 100px;
     border:  1px solid #e5ebf2;
 }
 
@@ -595,7 +641,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         9. Portfolio
 --------------------------------------*/
 .portfolio {
-    padding:  50px 0 100px;
+    padding:  100px 0 100px;
     border:  1px solid #e5ebf2;
 }
 
