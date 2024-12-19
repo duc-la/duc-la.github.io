@@ -257,8 +257,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
   line-height: 1.5;
 }
 
-.header-text h2 span {font-size: 30px;}
+.header-text h2 span {font-size: 30px;
+  color: #8892b0; 
+}
 .header-text h2 span span{color: #64ffda}
+.header-text h2 span.intro-text {
+  color: #8892b0 !important;  /* Lighter color for the intro text */
+  font-size: 54px;
+}
 
 .header-text p {
     /* color: #fff; */
@@ -328,7 +334,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 200px 0 0px;
+.about {padding: 100px ;
   background: #0a192f;
 }
 .about-content {padding-top: 0px;}
@@ -464,6 +470,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 20px;
+    color: #e6f1ff;
     /* border-bottom: 1px solid #e5ebf2; */
 }
 .single-progress-txt {
@@ -524,7 +531,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         7. Experience
 -------------------------------------*/
 .experience {
-    padding: 100px 0 0px;
+    padding: 100px;
     /* border-top: 1px solid #e5ebf2; */
     background: #0a192f;
 }
@@ -537,11 +544,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .experience-time h2 {
     font-weight: 400;
+    color: #e6f1ff;
 }
 .experience-time h3 {
     font-size: 16px;
     font-weight: 300;
-    color: #636a82;
+    color: #e6f1ff;
     margin-top: 14px;
     text-transform: uppercase;
 }
@@ -600,7 +608,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-transform: uppercase;
 }
 .timeline-content h5 {
-    color: #636a82;
+    color: #e6f1ff;
     font-size: 14px;
     font-weight: 300;
     margin: 18px 0 20px;
@@ -628,7 +636,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         8. Profiles
 --------------------------------------*/
 .projects {
-    padding:  100px 0 100px;
+    padding:  100px;
     /* border:  1px solid #e5ebf2; */
     background: #0a192f;
 }
@@ -704,8 +712,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         9. Portfolio
 --------------------------------------*/
 .publications {
-    padding:  100px 0 100px;
-    border:  1px solid #e5ebf2;
+    padding:  100px 0 0px;
+    /* border:  1px solid #e5ebf2; */
     background: #0a192f;
 }
 
@@ -800,10 +808,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 --------------------------------------*/
 .contact {
     background: #f9fbfd;
-    padding: 50px 0 100px;
+    padding: 100px 0 50px;
     background: #0a192f;
 }
-.single-contact-box {padding-top: 100px;}
+.single-contact-box {padding-top: 50px;}
 .contact-form  .form-group {
     margin-bottom: 20px;
     
@@ -864,7 +872,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /* contact-adress */
 .contact-add-head h3 {
     font-size:  24px;
-    color:  #3c4258;
+    color:  #e6f1ff;
 }
 .contact-add-head p {
     font-size:  16px;
@@ -1020,13 +1028,13 @@ nav a:hover {
   color: white !important; /* Ensures consistency when hovered */
 }
 
-.exp-link {
+.gen-link {
 	color: #64ffda; /* Makes the text green */
 	font-weight: bold; /* Optional: Makes the text stand out */
 	position: relative; /* Enables positioning for the arrow */
 }
 
-.exp-link::after {
+.gen-link::after {
 	content: '\2197'; /* Unicode for diagonal arrow pointing top-right */
 	font-size: 0.8em; /* Adjust size of the arrow */
 	color: #64ffda; /* Matches text color */
@@ -1045,6 +1053,7 @@ nav a:hover {
   visibility: hidden; /* Ensures it doesn't occupy space */
 }
 
+/*Add icons to the start of page*/
 .welcome-hero .social-icons {
   display: flex; /* Align icons horizontally */
   justify-content: flex-start; /* Align icons to the left */
@@ -1076,3 +1085,73 @@ nav a:hover {
   color: white; /* Change color on hover */
 }
 
+/*Clickable stuff for projects*/
+.clickable-div {
+  text-decoration: none; /* Remove default anchor styling */
+  display: inline-flex;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #64ffda;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-description p {
+  margin: 0;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.arrow {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.row-1 {
+  display: flex;  /* Make sure the content is displayed in a row */
+  align-items: center;  /* Vertically center the items */
+  justify-content: space-between;  /* Ensure space between the two items */
+}
+
+.col-sm-6-1{
+  flex: 1;  /* Allow the first column to take up available space */
+}
+
+/*Resume stuff*/
+.section-heading {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space out elements: title on the left, link on the right */
+  align-items: center; /* Ensure both elements are vertically aligned */
+}
+
+.resume-link {
+  font-size: 16px; /* Adjust the font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  color: #007BFF; /* Link color, change it to your preferred color */
+  text-decoration: none; /* Remove the underline from the link */
+}
+
+.resume-link:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.section-heading h2 {
+  margin: 0; /* Remove any default margin from the heading */
+}
