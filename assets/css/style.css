@@ -293,7 +293,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
 /*-------------------------------------
         4.  About
 --------------------------------------*/
-.about {padding: 100px 0 0px;}
+.about {padding: 200px 0 0px;
+  background: #0a192f;
+}
 .about-content {padding-top: 0px;}
 /*.single-about-txt*/
 .single-about-txt h3 {
@@ -949,4 +951,29 @@ nav a:active {
 /* For links that are hovered (when the user hovers the mouse over them) */
 nav a:hover {
   color: white !important; /* Ensures consistency when hovered */
+}
+
+.ara-link {
+	color: #a8ffe3;; /* Makes the text green */
+	font-weight: bold; /* Optional: Makes the text stand out */
+	position: relative; /* Enables positioning for the arrow */
+}
+
+.ara-link::after {
+	content: '\2197'; /* Unicode for diagonal arrow pointing top-right */
+	font-size: 0.8em; /* Adjust size of the arrow */
+	color: #a8ffe3;; /* Matches text color */
+	margin-left: 5px; /* Adds spacing between the text and arrow */
+	position: absolute;
+	top: 0; /* Aligns the arrow vertically with the text */
+	right: -20px; /* Adjusts horizontal spacing */
+}
+
+.scroll-down {
+  transition: opacity 1.5s ease, visibility 1.5s ease; /* Smooth fading effect */
+}
+
+.scroll-down.hidden {
+  opacity: 0; /* Makes the div invisible */
+  visibility: hidden; /* Ensures it doesn't occupy space */
 }

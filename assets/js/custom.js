@@ -124,4 +124,13 @@ $(document).ready(function(){
         });
 
 });	
-	
+
+document.addEventListener("scroll", function () {
+  const scrollDownDiv = document.querySelector(".scroll-down");
+
+  if (window.scrollY > 50) { // Adjust the threshold as needed
+      scrollDownDiv.classList.add("hidden");
+  } else {
+      scrollDownDiv.classList.remove("hidden");
+  }
+});
