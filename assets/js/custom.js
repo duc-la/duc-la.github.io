@@ -134,3 +134,14 @@ document.addEventListener("scroll", function () {
       scrollDownDiv.classList.remove("hidden");
   }
 });
+
+// window.addEventListener('hashchange', () => {
+//     const hash = window.location.hash;
+//     if (hash === '#project-archive') {
+//         // Load or display the "project-archive" content
+//         document.getElementById('main-content').innerHTML = `
+//             <h1>Project Archive</h1>
+//             <p>Welcome to the Project Archive section.</p>
+//         `;
+//     }
+// });
