@@ -51,7 +51,7 @@ a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;
 	color: #6a708e;
-	font-size:16px;
+	/* font-size:16px; */
 	padding:0;
 }
 h1,h2,h3,h4,h5,h6 { 
@@ -237,7 +237,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
 
 .header-text {
   flex: 1; /* Text takes up available space */
-  color: white; /* Ensure text is visible on the background */
+  color: #e6f1ff; /* Ensure text is visible on the background */
 }
 
 /*.header-text-area*/
@@ -268,14 +268,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
 
 .header-text p {
     /* color: #fff; */
-    color: #64ffda;
+    color: #e6f1ff;
+    /* color: #64ffda; */
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
 }
-.header-text a {
+
+
+/* .header-text a {
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -290,7 +293,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
-}
+} */
 
 .scroll-down {
   position: absolute;
@@ -328,7 +331,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #fff;}
   }
 }
 
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#fff;border: 1px solid #fff;}
+/* .header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#fff;border: 1px solid #fff;} */
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -886,7 +889,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.contact-add-info */
 .contact-add-info { margin: 30px 0 52px;}
 .single-contact-add-info h3 {
-    color:  #636a82;
+    color:  #e6f1ff;
     font-weight:  500;
 }
 .single-contact-add-info p {
@@ -986,6 +989,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
   list-style: none;
   padding: 0;
   margin: 0;
+  color: #e6f1ff;
   text-align: center; /* Center align the icons */
 }
 
@@ -998,11 +1002,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .social-icons ul li i {
   font-size: 40px; /* Increased icon size */
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  color: #e6f1ff;
 }
 
 .social-icons ul li i:hover {
   transform: scale(1.2); /* Slightly enlarge the icon on hover */
-  color: #3c4258; /* Change color on hover */
+  color: #e6f1ff; /* Change color on hover */
 }
 
 .single-contact-add-info a {
@@ -1015,20 +1020,26 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 nav a:focus {
-  color: white !important; /* Ensure it overrides other styles */
+  color: #e6f1ff !important; /* Ensure it overrides other styles */
 }
 
 /* For links that are active (when scrolling or when clicked) */
 nav a:active {
-  color: white !important; /* Ensure it overrides other styles */
+  color: #e6f1ff !important; /* Ensure it overrides other styles */
 }
 
 /* For links that are hovered (when the user hovers the mouse over them) */
 nav a:hover {
-  color: white !important; /* Ensures consistency when hovered */
+  color: #e6f1ff !important; /* Ensures consistency when hovered */
 }
 
 .gen-link {
+	color: #64ffda; /* Makes the text green */
+	font-weight: bold; /* Optional: Makes the text stand out */
+	position: relative; /* Enables positioning for the arrow */
+}
+
+.gen-link-1 {
 	color: #64ffda; /* Makes the text green */
 	font-weight: bold; /* Optional: Makes the text stand out */
 	position: relative; /* Enables positioning for the arrow */
@@ -1059,12 +1070,12 @@ nav a:hover {
   justify-content: flex-start; /* Align icons to the left */
   padding: 10px 0; /* Add some space above and below */
   margin-bottom: 20px; /* Space between icons and the header text */
-  color:white;
+  color: #e6f1ff;
 }
 
 .welcome-hero .social-icons ul {
   display: flex;
-  gap: 15px; /* Spacing between icons */
+  gap: 50px; /* Spacing between icons */
   list-style: none; /* Remove bullets */
   padding: 0;
   margin: 0;
@@ -1076,19 +1087,20 @@ nav a:hover {
 }
 
 .welcome-hero .social-icons ul li i {
-  font-size: 25px; /* Adjust size of icons */
+  font-size: 50px; /* Adjust size of icons */
   transition: transform 0.3s ease, color 0.3s ease; /* Hover effects */
 }
 
 .welcome-hero .social-icons ul li i:hover {
   transform: scale(1.2); /* Enlarge on hover */
-  color: white; /* Change color on hover */
+  color: #e6f1ff; /* Change color on hover */
 }
 
 /*Clickable stuff for projects*/
 .clickable-div {
-  text-decoration: none; /* Remove default anchor styling */
-  display: inline-flex;
+  text-decoration: none; 
+  display: flex;
+  width: 70%;
 }
 
 .project-container {
@@ -1128,10 +1140,12 @@ nav a:hover {
   display: flex;  /* Make sure the content is displayed in a row */
   align-items: center;  /* Vertically center the items */
   justify-content: space-between;  /* Ensure space between the two items */
+  margin-bottom: 20px;
 }
 
 .col-sm-6-1{
   flex: 1;  /* Allow the first column to take up available space */
+  max-width: 30%;
 }
 
 /*Resume stuff*/
@@ -1155,3 +1169,94 @@ nav a:hover {
 .section-heading h2 {
   margin: 0; /* Remove any default margin from the heading */
 }
+
+/*Links for header*/
+.header-link-1{
+  font-size: 30px;
+  color: #64ffda;
+}
+
+.header-link-1::after {
+	content: '\2197'; /* Unicode for diagonal arrow pointing top-right */
+	font-size: 0.8em; /* Adjust size of the arrow */
+	color: #64ffda; /* Matches text color */
+	margin-left: 5px; /* Adds spacing between the text and arrow */
+	position: absolute;
+	top: 0; /* Aligns the arrow vertically with the text */
+	right: -20px; /* Adjusts horizontal spacing */
+}
+
+.header-link-2{
+  color: #64ffda;
+}
+
+.header-link-2::after {
+	content: '\2197'; /* Unicode for diagonal arrow pointing top-right */
+	font-size: 0.8em; /* Adjust size of the arrow */
+	color: #64ffda; /* Matches text color */
+	margin-left: 5px; /* Adds spacing between the text and arrow */
+	position: absolute;
+	top: 0; /* Aligns the arrow vertically with the text */
+	right: -20px; /* Adjusts horizontal spacing */
+}
+
+/*Separator for intro and next section*/
+.line-with-circle {
+  position: relative;
+  width: 100%; /* Full width container */
+  margin-top: 40px; /* Space above the line */
+}
+
+
+.line-with-circle p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #636a82;
+  margin: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for disappearing effect */
+}
+
+.line-with-circle hr {
+  border: none;
+  border-top: 2px solid #ccc; /* Light gray line */
+  width: 100%; /* Line width */
+  margin: 0 auto; /* Center the line horizontally */
+  position: relative;
+}
+
+.line-with-circle .circle {
+  position: absolute;
+  top: -25px; /* Position above the line */
+  left: 50%; /* Center horizontally on the line */
+  transform: translateX(-50%); /* Adjust horizontal alignment */
+  background-color: #fff; /* Background matches page */
+  border: 2px solid #ccc; /* Circle border */
+  border-radius: 50%; /* Make it a perfect circle */
+  width: 50px; /* Circle size */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-with-circle .circle span {
+  font-size: 24px; /* Arrow size */
+  color: #555; /* Arrow color */
+}
+
+/*Fix underlying container*/
+/* .container{
+  width: 70vw;
+} */
+
+.project-description p{
+  color: #e6f1ff;
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-45deg);  /* Rotate the arrow counter-clockwise */
+  font-size: 24px;  /* Adjust the size */
+  color: #64ffda;
+}
+
